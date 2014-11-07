@@ -4,7 +4,18 @@
 <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
 <polymer-element name="codelab-app">
     <template>
-        <link rel="stylesheet" href="styles.css">Hello Polymer!
+        <link rel="stylesheet" href="styles.css">
+        <core-drawer-panel responsiveWidth="600px">
+
+            <core-header-panel drawer>
+                <!-- The content of the drawer section. -->
+            </core-header-panel>
+
+            <core-header-panel main>
+                <!-- The content of the main section. -->
+            </core-header-panel>
+
+        </core-drawer-panel>
     </template>
     <script>
         Polymer({});
