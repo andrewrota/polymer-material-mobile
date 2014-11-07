@@ -11,7 +11,7 @@
 
             <core-header-panel drawer>
                 <core-toolbar>
-                    <paper-icon-button icon="menu"></paper-icon-button>
+                    <paper-icon-button icon="menu" on-click="{{toggleDrawer}}"></paper-icon-button>
                     <span flex>Notes</span>
                     <paper-icon-button icon="search"></paper-icon-button>
                     <paper-icon-button icon="more-vert"></paper-icon-button>
@@ -25,6 +25,10 @@
         </core-drawer-panel>
     </template>
     <script>
-        Polymer({});
+        Polymer({
+            toggleDrawer: function() {
+                this.$.drawerPanel.togglePanel();
+            }
+        });
     </script>
 </polymer-element>
